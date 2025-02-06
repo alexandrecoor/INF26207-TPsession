@@ -1,7 +1,7 @@
-include_directories(${CMAKE_SOURCE_DIR}/common)
+include_directories(${CMAKE_SOURCE_DIR}/lib)
 
-# Création de l'exécutable server.bin
-add_executable(server.bin server.c ../common/common.c)
+file(GLOB SERVER_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.c ${CMAKE_SOURCE_DIR}/lib/*.c)
 
-# Définition du répertoire de sortie
+add_executable(server.bin ${SERVER_SOURCES})
+
 set_target_properties(server.bin PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)

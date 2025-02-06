@@ -1,4 +1,3 @@
-#include "common.h"
 #include "client.h"
 
 void start_client() {

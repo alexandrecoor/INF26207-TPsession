@@ -1,5 +1,5 @@
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef LIB_H
+#define LIB_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,4 +10,4 @@
 #define PORT 2212
 #define BUFFER_SIZE 1024
 
-#endif // COMMON_H
+#endif // LIB_H
