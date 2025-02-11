@@ -3,6 +3,7 @@
 
 #include "include.h"
 
-void start_client();
+#include "client_struct.h"
+#include "client_functions.h"
 
 #endif // CLIENT_H
